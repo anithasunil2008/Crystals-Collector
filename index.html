@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>
+        CrystalsCollector Game
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body background="assets/images/bg.jpg">
+    <header>
+        <strong>
+            CrystalsCollector Game
+        </strong>
+    </header>
+
+    <br>
+    <br>
+    <article>
+        <h2>
+            Instructions:
+        </h2>
+        <br>
+        <ul>
+            <li> You will given a random number at the start of the game</li>
+            <br>
+            <li>There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total score. </li>
+            <br>
+            <li>You win the game by matching your total score to random number, your lose the game if your total score goes above the rambom number.</li>
+            <br>
+            <li>The value of each crystals is hidden from you until you click on it.</li>
+            <br>
+            <li>Each time when the game starts, the game will change the values of each crystals.</li>
+        </ul>
+    </article>
+
+    <br>
+
+    <section>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" id="randomNumber">
+                    <h4 class="card-header bg-warning">Random Number</h4>
+                    <div class="card-body">
+                        <p id="guesses" class="card-text">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h4 class="card-header bg-success">Wins</h4>
+                    <div class="card-body">
+                        <p id="wins" class="card-text">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <h4 class="card-header bg-danger">Losses</h4>
+                    <div class="card-body">
+                        <p id="losses" class="card-text">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <h2>Crystals:</h2>
+
+    <br>
+    <div class="crystals">
+        <img id="hexa" class="icons" width=100 height=100 src="assets/images/hexa.png" />
+        <img id="diamond" class="icons" width=100 height=100 src="assets/images/diamond.jpg" />
+        <img id="octa" class="icons" width=100 height=100 src="assets/images/octa.jpg" />
+        <img id="square" class="icons" width=100 height=100 src="assets/images/square.jpg" />
+    </div>
+
+    <br>
+    <br>
+    <h2>Total Crystal Points</h2>
+    <div id="finalNumber">
+        <h2 id="userTotal">0</h4>
+    </div>
+    <br>
+    <!-- <button width="100px" height="50px">Play Again</button> -->
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
+</body>
+
+</html>
