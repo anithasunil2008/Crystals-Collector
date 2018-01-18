@@ -55,7 +55,7 @@ button {
 #userTotal {
     margin-left: 550px;
     border: hidden;
-    background-color: teal;
+    background-color: gold;
     border-radius: 50px;
     text-align: center;
     width: 300px;
@@ -63,8 +63,17 @@ button {
     padding-top: 35px;
 }
 
-#finalNumber {}
-
 section {
     margin-left: 120px;
+}
+
+#restart {
+    margin-top: 50px;
+    margin-left: 630px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
